@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bass and Treble Test: Check Your Speaker's Sound Range | Speaker Cleaner Hub</title>
+<meta name="description" content="Test your phone speaker's bass and treble to find weak low notes, harsh highs, and distortion. Learn what good results sound like and what to do next.">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;line-height:1.65;color:#1e293b;background:#f8fafc}
+a{color:#2563eb;text-decoration:none}
+a:hover{text-decoration:underline}
+img{max-width:100%;height:auto;display:block}
+header{background:#0f172a;color:#fff}
+.header-inner{max-width:960px;margin:0 auto;padding:14px 20px;display:flex;flex-wrap:wrap;align-items:center;gap:10px;justify-content:space-between}
+.logo{font-size:22px;font-weight:800;color:#fff;white-space:nowrap}
+.logo span{color:#38bdf8}
+nav{display:flex;flex-wrap:wrap;gap:4px}
+nav a{color:#cbd5e1;font-size:15px;padding:6px 10px;border-radius:6px}
+nav a:hover{color:#fff;background:#1e293b;text-decoration:none}
+main{max-width:960px;margin:0 auto;padding:24px 20px 48px}
+h1{font-size:28px;line-height:1.3;margin-bottom:14px;color:#0f172a}
+h2{font-size:22px;margin:28px 0 10px;color:#0f172a}
+h3{font-size:18px;margin:20px 0 8px;color:#0f172a}
+p{margin-bottom:14px}
+ul,ol{margin:0 0 14px 24px}
+li{margin-bottom:6px}
+.hero{background:linear-gradient(135deg,#2563eb,#0ea5e9);color:#fff;border-radius:16px;padding:36px 28px;text-align:center;margin-bottom:28px}
+.hero h1{font-size:30px;color:#fff;margin-bottom:12px}
+.hero p{font-size:17px;opacity:.95;margin-bottom:20px}
+.btn{display:inline-block;background:#fff;color:#1d4ed8;font-weight:700;padding:12px 26px;border-radius:999px;border:0;cursor:pointer;font-size:16px}
+.btn:hover{text-decoration:none;opacity:.92}
+.btn-primary{background:#2563eb;color:#fff}
+.btn-secondary{background:#e2e8f0;color:#0f172a}
+.btn-danger{background:#dc2626;color:#fff}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:18px;margin:20px 0}
+.card{background:#fff;border:1px solid #e2e8f0;border-radius:12px;overflow:hidden}
+.card img{width:100%;height:170px;object-fit:cover}
+.card-body{padding:16px}
+.card-body h3{margin:0 0 8px;font-size:18px}
+.card-body h3 a{color:#0f172a}
+.card-body p{font-size:15px;color:#475569;margin-bottom:10px}
+.tool-box{background:#fff;border:1px solid #e2e8f0;border-radius:14px;padding:24px;margin:20px 0}
+.tool-box label{display:block;font-weight:600;margin:14px 0 6px}
+.tool-box input[type=range]{width:100%}
+.tool-box select,.tool-box input[type=number]{padding:10px;border:1px solid #cbd5e1;border-radius:8px;font-size:16px;width:100%;max-width:320px}
+.readout{background:#0f172a;color:#38bdf8;font-size:22px;font-weight:700;text-align:center;border-radius:10px;padding:16px;margin:16px 0}
+.progress{height:12px;background:#e2e8f0;border-radius:999px;overflow:hidden;margin:14px 0}
+.progress-bar{height:100%;background:#2563eb;width:0%}
+.status{font-weight:600;text-align:center;margin:10px 0}
+.warning{background:#fef3c7;border:1px solid #f59e0b;border-radius:10px;padding:14px 16px;margin:16px 0;font-size:15px}
+.note{background:#eff6ff;border:1px solid #93c5fd;border-radius:10px;padding:14px 16px;margin:16px 0;font-size:15px}
+.faq{margin:20px 0}
+.faq h3{font-size:17px;margin:16px 0 4px}
+.featured{border-radius:12px;margin:0 0 20px}
+.btn-row{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin:16px 0}
+footer{background:#0f172a;color:#94a3b8;padding:28px 20px;text-align:center;font-size:14px}
+footer a{color:#cbd5e1;margin:0 8px}
+footer p{margin-bottom:8px}
+@media(max-width:600px){
+  h1{font-size:24px}
+  .hero{padding:28px 18px}
+  .hero h1{font-size:24px}
+  nav a{font-size:14px;padding:5px 7px}
+}
+</style>
+</head>
+<body>
+<header>
+<div class="header-inner">
+<a class="logo" href="../index.html">Speaker Cleaner <span>Hub</span></a>
+<nav>
+<a href="../index.html">Home</a>
+<a href="../tools/speaker-cleaner.html">Speaker Cleaner</a>
+<a href="../tools/volume-test.html">Volume Test</a>
+<a href="../tools/frequency-generator.html">Frequency Generator</a>
+<a href="../tools/sound-test.html">Sound Test</a>
+<a href="../about.html">About</a>
+<a href="../contact.html">Contact</a>
+</nav>
+</div>
+</header>
+<main>
+<h1>Bass and Treble Test: Check Your Speaker's Sound Range</h1>
+<img class="featured" src="../images/bass-treble-test.jpg" alt="Phone speaker test showing low bass sound waves and high treble sound waves">
+<p>Every speaker has a range: the lowest note it can play cleanly and the highest note it can reach. Bass is the low end, the deep tones that give music warmth and weight. Treble is the high end, the bright tones that make voices clear. A phone speaker is small, so its range is narrower than a large speaker, but a healthy one should still handle both ends reasonably well. A bass and treble test plays tones across that range so you can hear where your speaker is strong, weak, or distorted.</p>
+<h2>What Bass and Treble Mean for a Phone Speaker</h2>
+<p>Sound is measured in hertz, or Hz, which is the number of vibrations per second. Low frequencies sound deep; high frequencies sound bright. Human hearing runs roughly from 20 Hz to 20,000 Hz, but no phone speaker covers that whole range. A typical phone speaker handles the middle well, roughly 200 Hz to 10,000 Hz, with bass below that getting quieter and treble above that fading away. That is normal for a small speaker, and it is not a fault.</p>
+<p>Bass on a phone is mostly felt in the 60 to 250 Hz range. Notes in this range make the diaphragm move a long way, which is why bass is the first thing to suffer when a speaker is damaged or blocked: the diaphragm cannot move freely, so low notes become quiet, rattly, or disappear. Treble lives roughly from 4,000 to 12,000 Hz. High notes make the diaphragm move very fast but only a tiny distance, so treble problems show up as harshness or a loss of clarity.</p>
+<h2>How to Run a Bass and Treble Test</h2>
+<p>Use the <a href="../tools/frequency-generator.html">frequency generator</a> or the <a href="../tools/sound-test.html">sound test tool</a> to play the tones below. Set the volume to about 70 percent, remove the case, turn off Bluetooth, and find a quiet room. Then work through the range in order. Play a low tone at 60 Hz and listen for a deep, smooth hum: it will be quiet, but it should be steady. Play 100 Hz, then 200 Hz, and the sound should get louder and clearer as the pitch rises. Play 500 Hz and 1000 Hz, the middle of the range, which should sound loud, clear, and smooth. Play 4000 Hz, then 8000 Hz: these treble notes should sound bright and clear, not harsh or painful. Play 12,000 Hz, near the top of what most phone speakers can do. Finally, play a sweep from 60 Hz to 12,000 Hz and listen for any pitch where the sound buzzes, rattles, or drops out.</p>
+<p>Take your time with each tone. Listen for a few seconds before moving on, and note down any pitch that sounds wrong. The sweep at the end shows the whole range in one go, but the individual tones give a clearer picture of each part of the range.</p>
+<h2>What Good Results Sound Like</h2>
+<p>A healthy phone speaker has a predictable pattern. The lowest tones are quiet but smooth, with no buzzing or rattling. As the pitch rises through 100 to 500 Hz, the volume increases steadily. The middle of the range, around 500 to 2000 Hz, is the loudest and clearest part. Treble notes are bright and clear, and the very highest tones fade gently rather than cutting out suddenly.</p>
+<p>Judge your phone against what a phone speaker can realistically do, not against a large home speaker. A phone will never produce deep, powerful bass, because the diaphragm is too small to move enough air. Quiet bass is normal; bass that buzzes, rattles, or sounds strained is not. Thin treble is normal on a phone, but treble that is harsh, distorted, or painful is a sign of a problem.</p>
+<h2>What Bad Results Mean</h2>
+<p>The pattern of the problem points to the cause:</p>
+<ul>
+<li><strong>Buzzing or rattling on low notes only:</strong> The diaphragm may be damaged, or something loose may be vibrating. Low notes move the diaphragm furthest, so they expose damage first. Cleaning will not fix this.</li>
+<li><strong>Everything sounds muffled across the range:</strong> The grille is very likely clogged with dust or water. Clean it and run the test again.</li>
+<li><strong>Distortion that appears only at high volume:</strong> The speaker is likely worn or damaged. A healthy speaker stays clean up to its maximum volume.</li>
+</ul>
+<div class="note"><strong>Tip:</strong> Run the bass and treble test before and after cleaning, at the same volume, so you can compare fairly. If the low notes improve after cleaning, dust or water was blocking the diaphragm.</div>
+<h2>What to Do After the Test</h2>
+<p>If the test shows muffled sound across the range, clean the grille gently with a soft brush and run a cleaning tone cycle with our <a href="../tools/speaker-cleaner.html">speaker cleaner tool</a>, then test again. If buzzing or distortion on low notes does not improve with cleaning, the speaker is very likely damaged, and no app or tone will repair it. If the test is clean but music still sounds flat, check your audio settings: an equaliser preset, a volume limit, or a sound effect can change how bass and treble sound.</p>
+<h2>Frequently Asked Questions</h2>
+<h3>Why is my phone bass so weak?</h3>
+<p>Phone speakers are small, so weak bass is normal. If the bass used to be stronger and has got worse, the grille may be blocked with dust, or the speaker may be damaged. Clean it and test again.</p>
+<h3>What frequency is bass and what is treble?</h3>
+<p>On a phone, bass is roughly 60 to 250 Hz and treble is roughly 4000 to 12,000 Hz. The middle range, 500 to 2000 Hz, is where voices live and where phone speakers are strongest.</p>
+<h3>Can a bass test damage my speaker?</h3>
+<p>No, when played at normal volume for short periods. Low tones at maximum volume for a long time can heat the speaker, so keep test tones brief and do not leave them running.</p>
+<h2>Related guides</h2>
+<p>You may also find these guides useful:</p>
+<ul>
+<li><a href="speaker-test-sounds.html">Speaker Test Sounds: How to Check Your Phone Speaker</a></li>
+<li><a href="left-right-channel-test.html">Left and Right Channel Test for Phone Speakers</a></li>
+<li><a href="speaker-distortion-causes.html">What Causes Speaker Distortion on a Phone</a></li>
+<li><a href="how-speaker-cleaner-apps-work.html">How Speaker Cleaner Apps Work</a></li>
+</ul>
+</main>
+<footer>
+<p><a href="../index.html">Home</a> | <a href="../about.html">About</a> | <a href="../contact.html">Contact</a> | <a href="../privacy.html">Privacy Policy</a> | <a href="../disclaimer.html">Disclaimer</a></p>
+<p>Speaker Cleaner Hub — free tools and guides to keep your phone speaker clean and loud.</p>
+<p>Copyright 2026 Speaker Cleaner Hub. All rights reserved.</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Left and Right Channel Test for Phone Speakers | Speaker Cleaner Hub</title>
+<meta name="description" content="Check your phone's left and right audio channels to find a quiet or silent speaker. Learn how stereo works on phones and how to test each side step by step.">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;line-height:1.65;color:#1e293b;background:#f8fafc}
+a{color:#2563eb;text-decoration:none}
+a:hover{text-decoration:underline}
+img{max-width:100%;height:auto;display:block}
+header{background:#0f172a;color:#fff}
+.header-inner{max-width:960px;margin:0 auto;padding:14px 20px;display:flex;flex-wrap:wrap;align-items:center;gap:10px;justify-content:space-between}
+.logo{font-size:22px;font-weight:800;color:#fff;white-space:nowrap}
+.logo span{color:#38bdf8}
+nav{display:flex;flex-wrap:wrap;gap:4px}
+nav a{color:#cbd5e1;font-size:15px;padding:6px 10px;border-radius:6px}
+nav a:hover{color:#fff;background:#1e293b;text-decoration:none}
+main{max-width:960px;margin:0 auto;padding:24px 20px 48px}
+h1{font-size:28px;line-height:1.3;margin-bottom:14px;color:#0f172a}
+h2{font-size:22px;margin:28px 0 10px;color:#0f172a}
+h3{font-size:18px;margin:20px 0 8px;color:#0f172a}
+p{margin-bottom:14px}
+ul,ol{margin:0 0 14px 24px}
+li{margin-bottom:6px}
+.hero{background:linear-gradient(135deg,#2563eb,#0ea5e9);color:#fff;border-radius:16px;padding:36px 28px;text-align:center;margin-bottom:28px}
+.hero h1{font-size:30px;color:#fff;margin-bottom:12px}
+.hero p{font-size:17px;opacity:.95;margin-bottom:20px}
+.btn{display:inline-block;background:#fff;color:#1d4ed8;font-weight:700;padding:12px 26px;border-radius:999px;border:0;cursor:pointer;font-size:16px}
+.btn:hover{text-decoration:none;opacity:.92}
+.btn-primary{background:#2563eb;color:#fff}
+.btn-secondary{background:#e2e8f0;color:#0f172a}
+.btn-danger{background:#dc2626;color:#fff}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:18px;margin:20px 0}
+.card{background:#fff;border:1px solid #e2e8f0;border-radius:12px;overflow:hidden}
+.card img{width:100%;height:170px;object-fit:cover}
+.card-body{padding:16px}
+.card-body h3{margin:0 0 8px;font-size:18px}
+.card-body h3 a{color:#0f172a}
+.card-body p{font-size:15px;color:#475569;margin-bottom:10px}
+.tool-box{background:#fff;border:1px solid #e2e8f0;border-radius:14px;padding:24px;margin:20px 0}
+.tool-box label{display:block;font-weight:600;margin:14px 0 6px}
+.tool-box input[type=range]{width:100%}
+.tool-box select,.tool-box input[type=number]{padding:10px;border:1px solid #cbd5e1;border-radius:8px;font-size:16px;width:100%;max-width:320px}
+.readout{background:#0f172a;color:#38bdf8;font-size:22px;font-weight:700;text-align:center;border-radius:10px;padding:16px;margin:16px 0}
+.progress{height:12px;background:#e2e8f0;border-radius:999px;overflow:hidden;margin:14px 0}
+.progress-bar{height:100%;background:#2563eb;width:0%}
+.status{font-weight:600;text-align:center;margin:10px 0}
+.warning{background:#fef3c7;border:1px solid #f59e0b;border-radius:10px;padding:14px 16px;margin:16px 0;font-size:15px}
+.note{background:#eff6ff;border:1px solid #93c5fd;border-radius:10px;padding:14px 16px;margin:16px 0;font-size:15px}
+.faq{margin:20px 0}
+.faq h3{font-size:17px;margin:16px 0 4px}
+.featured{border-radius:12px;margin:0 0 20px}
+.btn-row{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin:16px 0}
+footer{background:#0f172a;color:#94a3b8;padding:28px 20px;text-align:center;font-size:14px}
+footer a{color:#cbd5e1;margin:0 8px}
+footer p{margin-bottom:8px}
+@media(max-width:600px){
+  h1{font-size:24px}
+  .hero{padding:28px 18px}
+  .hero h1{font-size:24px}
+  nav a{font-size:14px;padding:5px 7px}
+}
+</style>
+</head>
+<body>
+<header>
+<div class="header-inner">
+<a class="logo" href="../index.html">Speaker Cleaner <span>Hub</span></a>
+<nav>
+<a href="../index.html">Home</a>
+<a href="../tools/speaker-cleaner.html">Speaker Cleaner</a>
+<a href="../tools/volume-test.html">Volume Test</a>
+<a href="../tools/frequency-generator.html">Frequency Generator</a>
+<a href="../tools/sound-test.html">Sound Test</a>
+<a href="../about.html">About</a>
+<a href="../contact.html">Contact</a>
+</nav>
+</div>
+</header>
+<main>
+<h1>Left and Right Channel Test for Phone Speakers</h1>
+<img class="featured" src="../images/left-right-channel-test.jpg" alt="Phone with left and right audio channel test showing sound from both speakers">
+<p>Most modern phones have stereo speakers: two speakers that work together to create a sense of left and right in the sound. When both are working, music feels wide and spacious, and voices sound centred. When one side is quiet, blocked, or faulty, the sound collapses to one side, music loses its depth, and you may feel like the phone is only half working. A left and right channel test plays sound through one channel at a time, so you can check each side separately and find out whether the problem is in one speaker or in the audio itself. This guide explains how stereo works on a phone, how to run the test, and what the results mean.</p>
+<h2>How Stereo Works on a Phone</h2>
+<p>Stereo sound has two channels, left and right, and each channel carries slightly different audio. On a phone, the two channels usually come from two separate speakers. On most phones, one speaker is at the bottom edge and the other is the earpiece at the top, which doubles as a second speaker for media. Some phones have two bottom speakers, and a few have a speaker on each end. When you hold the phone sideways to watch a video, the bottom speaker becomes one side and the earpiece becomes the other, which is why videos sound wider in landscape mode.</p>
+<p>Because the two speakers are in different places and are different sizes, they do not always sound identical. The earpiece speaker is usually smaller and quieter than the bottom speaker, so a small difference in volume between the two sides is normal. What is not normal is one side being very quiet, muffled, distorted, or completely silent. That usually means one grille is blocked, one speaker is damaged, or the audio balance setting has been changed.</p>
+<h2>How to Run a Left and Right Channel Test</h2>
+<p>Use the <a href="../tools/sound-test.html">sound test tool</a> to play the channel tests. Set up properly first, or the results will be misleading. Go somewhere quiet and remove the phone case, then turn off Bluetooth so the sound comes from the phone speakers, not from headphones. Set the media volume to about 70 percent and hold the phone in landscape mode, sideways, so the two speakers are to your left and right. Play the left channel test: you should hear the tone clearly from the left speaker only. Play the right channel test the same way, then play a tone through both channels and check that the sound feels centred, not pulled to one side.</p>
+<p>Listen carefully to the volume and the clarity of each side. A small difference is normal, because the two speakers are different sizes, but a large difference is not. If you are unsure, cover one speaker gently with your finger while the other plays, so you can judge each one on its own. You can also use the <a href="../tools/volume-test.html">volume test tool</a> to compare the two sides at different volume levels.</p>
+<h2>What the Results Mean</h2>
+<p>The pattern tells you where the problem is:</p>
+<ul>
+<li><strong>Both channels sound clear and roughly equal:</strong> The speakers are healthy. If music still sounds odd, the cause is probably the audio file, the app, or a sound setting.</li>
+<li><strong>One channel is quieter but still clear:</strong> The quieter speaker's grille is very likely blocked with dust or water. Clean that grille and test again.</li>
+<li><strong>One channel is muffled while the other is clear:</strong> Dust or water is blocking one grille. Clean it gently with a soft brush and run a cleaning tone.</li>
+<li><strong>One channel is distorted or crackly:</strong> That speaker may be damaged, or debris may be sitting on its diaphragm. Cleaning may help if it is debris, but not if the speaker is damaged.</li>
+<li><strong>One channel is completely silent:</strong> That speaker or its connection has failed, or the audio balance setting is set all the way to one side. Check the balance setting first, then clean, then consider a repair.</li>
+</ul>
+<div class="note"><strong>Check the balance setting first:</strong> Both iPhone and Android have an audio balance control that can send all sound to one side. On iPhone it is under Accessibility, and on Android it is under Accessibility or Sound settings. If the balance slider has been moved by accident, one channel will be silent even though both speakers are fine. This is a common cause of one-sided sound and takes seconds to fix.</div>
+<h2>Cleaning One Blocked Speaker</h2>
+<p>If the test shows that one side is blocked, clean that speaker first, then test again. Brush the grille gently with a soft, dry brush, use sticky tape to lift surface dust, and run a cleaning tone with the <a href="../tools/speaker-cleaner.html">speaker cleaner tool</a> while holding that speaker facing down. Clean the other speaker too, because dust rarely affects only one grille for long. Our guides on <a href="clean-iphone-speaker.html">cleaning an iPhone speaker</a> and <a href="clean-samsung-android-speaker.html">cleaning a Samsung or Android speaker</a> give the full step-by-step method for each type of phone.</p>
+<p>If cleaning does not fix a one-sided problem, and the balance setting is centred, the speaker itself may be damaged or its connection may have come loose, often after a drop. Sound-based cleaning cannot fix a damaged speaker or a loose connection. A repair shop can test each speaker separately and replace the faulty one. If the phone is still under warranty, check your cover before paying for a repair.</p>
+<h2>Frequently Asked Questions</h2>
+<h3>Why does sound only come out of one side of my phone?</h3>
+<p>The most common causes are a blocked grille on one side, the audio balance setting favouring one side, or a faulty speaker. Check the balance setting first, then clean the quiet speaker.</p>
+<h3>Is it normal for one phone speaker to be quieter than the other?</h3>
+<p>Yes, a small difference is normal, because the earpiece speaker is smaller than the bottom speaker. A large difference, distortion, or silence on one side is not normal.</p>
+<h3>Can a channel test fix my speaker?</h3>
+<p>No. The test only shows you which side has the problem. Cleaning can fix a blocked grille, but a damaged speaker needs a repair.</p>
+<h2>Related guides</h2>
+<p>You may also find these guides useful:</p>
+<ul>
+<li><a href="speaker-test-sounds.html">Speaker Test Sounds: How to Check Your Phone Speaker</a></li>
+<li><a href="bass-treble-test.html">Bass and Treble Test: Check Your Speaker's Sound Range</a></li>
+<li><a href="fix-low-muffled-speaker-volume.html">How to Fix Low or Muffled Speaker Volume</a></li>
+<li><a href="remove-dust-from-phone-speaker.html">How to Remove Dust from Your Phone Speaker</a></li>
+</ul>
+</main>
+<footer>
+<p><a href="../index.html">Home</a> | <a href="../about.html">About</a> | <a href="../contact.html">Contact</a> | <a href="../privacy.html">Privacy Policy</a> | <a href="../disclaimer.html">Disclaimer</a></p>
+<p>Speaker Cleaner Hub — free tools and guides to keep your phone speaker clean and loud.</p>
+<p>Copyright 2026 Speaker Cleaner Hub. All rights reserved.</p>
+</footer>
+</body>
+</html>
