@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Speaker Cleaner — Clean Your Phone Speaker with Sound | Speaker Cleaner Hub</title>
+<meta name="description" content="Free speaker cleaner: play low-frequency vibration tones, a frequency sweep and noise bursts to help remove dust and water from your phone speaker.">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;line-height:1.65;color:#1e293b;background:#f8fafc}
+a{color:#2563eb;text-decoration:none}
+a:hover{text-decoration:underline}
+img{max-width:100%;height:auto;display:block}
+header{background:#0f172a;color:#fff}
+.header-inner{max-width:960px;margin:0 auto;padding:14px 20px;display:flex;flex-wrap:wrap;align-items:center;gap:10px;justify-content:space-between}
+.logo{font-size:22px;font-weight:800;color:#fff;white-space:nowrap}
+.logo span{color:#38bdf8}
+nav{display:flex;flex-wrap:wrap;gap:4px}
+nav a{color:#cbd5e1;font-size:15px;padding:6px 10px;border-radius:6px}
+nav a:hover{color:#fff;background:#1e293b;text-decoration:none}
+main{max-width:960px;margin:0 auto;padding:24px 20px 48px}
+h1{font-size:28px;line-height:1.3;margin-bottom:14px;color:#0f172a}
+h2{font-size:22px;margin:28px 0 10px;color:#0f172a}
+h3{font-size:18px;margin:20px 0 8px;color:#0f172a}
+p{margin-bottom:14px}
+ul,ol{margin:0 0 14px 24px}
+li{margin-bottom:6px}
+.hero{background:linear-gradient(135deg,#2563eb,#0ea5e9);color:#fff;border-radius:16px;padding:36px 28px;text-align:center;margin-bottom:28px}
+.hero h1{font-size:30px;color:#fff;margin-bottom:12px}
+.hero p{font-size:17px;opacity:.95;margin-bottom:20px}
+.btn{display:inline-block;background:#fff;color:#1d4ed8;font-weight:700;padding:12px 26px;border-radius:999px;border:0;cursor:pointer;font-size:16px}
+.btn:hover{text-decoration:none;opacity:.92}
+.btn-primary{background:#2563eb;color:#fff}
+.btn-secondary{background:#e2e8f0;color:#0f172a}
+.btn-danger{background:#dc2626;color:#fff}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:18px;margin:20px 0}
+.card{background:#fff;border:1px solid #e2e8f0;border-radius:12px;overflow:hidden}
+.card img{width:100%;height:170px;object-fit:cover}
+.card-body{padding:16px}
+.card-body h3{margin:0 0 8px;font-size:18px}
+.card-body h3 a{color:#0f172a}
+.card-body p{font-size:15px;color:#475569;margin-bottom:10px}
+.tool-box{background:#fff;border:1px solid #e2e8f0;border-radius:14px;padding:24px;margin:20px 0}
+.tool-box label{display:block;font-weight:600;margin:14px 0 6px}
+.tool-box input[type=range]{width:100%}
+.tool-box select,.tool-box input[type=number]{padding:10px;border:1px solid #cbd5e1;border-radius:8px;font-size:16px;width:100%;max-width:320px}
+.readout{background:#0f172a;color:#38bdf8;font-size:22px;font-weight:700;text-align:center;border-radius:10px;padding:16px;margin:16px 0}
+.progress{height:12px;background:#e2e8f0;border-radius:999px;overflow:hidden;margin:14px 0}
+.progress-bar{height:100%;background:#2563eb;width:0%}
+.status{font-weight:600;text-align:center;margin:10px 0}
+.warning{background:#fef3c7;border:1px solid #f59e0b;border-radius:10px;padding:14px 16px;margin:16px 0;font-size:15px}
+.note{background:#eff6ff;border:1px solid #93c5fd;border-radius:10px;padding:14px 16px;margin:16px 0;font-size:15px}
+.faq{margin:20px 0}
+.faq h3{font-size:17px;margin:16px 0 4px}
+.featured{border-radius:12px;margin:0 0 20px}
+.btn-row{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin:16px 0}
+footer{background:#0f172a;color:#94a3b8;padding:28px 20px;text-align:center;font-size:14px}
+footer a{color:#cbd5e1;margin:0 8px}
+footer p{margin-bottom:8px}
+@media(max-width:600px){
+  h1{font-size:24px}
+  .hero{padding:28px 18px}
+  .hero h1{font-size:24px}
+  nav a{font-size:14px;padding:5px 7px}
+}
+</style>
+</head>
+<body>
+<header>
+<div class="header-inner">
+<a class="logo" href="../index.html">Speaker Cleaner <span>Hub</span></a>
+<nav>
+<a href="../index.html">Home</a>
+<a href="../tools/speaker-cleaner.html">Speaker Cleaner</a>
+<a href="../tools/volume-test.html">Volume Test</a>
+<a href="../tools/frequency-generator.html">Frequency Generator</a>
+<a href="../tools/sound-test.html">Sound Test</a>
+<a href="../about.html">About</a>
+<a href="../contact.html">Contact</a>
+</nav>
+</div>
+</header>
+<main>
+<h1>Speaker Cleaner</h1>
+<p>Play real cleaning sounds through your phone speaker. Low-frequency tones vibrate the speaker diaphragm to help shake out dust and push water droplets out of the grille. Choose a mode, turn your volume up, and press Start.</p>
+
+<div class="warning"><strong>Before you start:</strong> turn your phone volume up to maximum, remove the case, and hold the phone with the speaker facing down so dust and water can fall out. Do not hold the phone against your ear while the tone is playing. Sound cleaning helps with dust and water — it cannot fix a blown speaker or hardware damage.</div>
+
+<div class="tool-box">
+<label for="mode">Cleaning mode</label>
+<select id="mode">
+<option value="low">Low-frequency vibration — 165 Hz sine tone</option>
+<option value="sweep">Frequency sweep — 100 Hz to 20,000 Hz</option>
+<option value="burst">Noise bursts — short pulses with pauses</option>
+</select>
+
+<label for="duration">Duration</label>
+<select id="duration">
+<option value="30">30 seconds</option>
+<option value="60" selected>60 seconds</option>
+<option value="90">90 seconds</option>
+</select>
+
+<label for="volume">Volume: <span id="volumeLabel">100%</span></label>
+<input type="range" id="volume" min="10" max="100" value="100">
+
+<div class="readout" id="readout">Ready — press Start Cleaning</div>
+<div class="progress"><div class="progress-bar" id="progressBar"></div></div>
+<p class="status" id="status">Not running</p>
+<div class="btn-row">
+<button class="btn btn-primary" id="startBtn" type="button">Start Cleaning</button>
+<button class="btn btn-danger" id="stopBtn" type="button" disabled>Stop</button>
+</div>
+</div>
+
+<h2>How to use the speaker cleaner</h2>
+<ol>
+<li>Turn your phone volume up to the highest level.</li>
+<li>Remove the phone case and hold the phone with the speaker grille facing down.</li>
+<li>Pick a mode. Low-frequency vibration works best for dust; the sweep helps with both dust and water; noise bursts are good for stubborn lint.</li>
+<li>Press Start Cleaning and let it run for the full duration. You can run it again if the sound is still muffled.</li>
+<li>After cleaning, test your speaker with the <a href="volume-test.html">Volume Test</a> or the <a href="sound-test.html">Sound Test</a>.</li>
+</ol>
+
+<h2>What each mode does</h2>
+<p><strong>Low-frequency vibration (165 Hz):</strong> a steady sine tone at 165 Hz. Low tones move the speaker diaphragm the most, which shakes dust loose from the grille and the diaphragm.</p>
+<p><strong>Frequency sweep (100 Hz to 20,000 Hz):</strong> the tone rises smoothly from 100 Hz to 20,000 Hz over the selected duration, vibrating the speaker across its whole range. This reaches dust and water sitting in different parts of the grille.</p>
+<p><strong>Noise bursts:</strong> short bursts of sound with brief pauses. The sudden starts and stops jolt the diaphragm, which can dislodge stuck lint.</p>
+
+<div class="faq">
+<h2>Frequently Asked Questions</h2>
+<h3>Does the speaker cleaner really work?</h3>
+<p>It helps with dust, lint and small amounts of water, because vibration can move those things out of the speaker grille. It does not repair hardware damage. If your speaker still sounds bad after two or three cleaning runs, read <a href="../guides/when-to-visit-repair-shop.html">When to Visit a Repair Shop for Speaker Problems</a>.</p>
+<h3>Is it safe for my phone?</h3>
+<p>Yes, when used as directed. The tones are ordinary sounds at normal volume. Do not hold the phone to your ear while cleaning, and stop if you hear harsh distortion — that can mean the speaker is already damaged.</p>
+<h3>How many times should I run it?</h3>
+<p>Once or twice is usually enough. If the sound is still muffled after three runs, the problem is probably a blocked grille or damaged hardware, not loose dust. Try the physical cleaning steps in <a href="../guides/remove-dust-from-phone-speaker.html">How to Remove Dust from Your Phone Speaker</a>.</p>
+</div>
+
+<p>Learn more: <a href="../guides/how-speaker-cleaner-apps-work.html">How Speaker Cleaner Apps Work</a> &middot; <a href="../guides/water-eject-sound.html">Water Eject Sound</a> &middot; <a href="../guides/safe-cleaning-methods.html">Safe Ways to Clean a Phone Speaker</a></p>
+</main>
+<footer>
+<p><a href="../index.html">Home</a> | <a href="../about.html">About</a> | <a href="../contact.html">Contact</a> | <a href="../privacy.html">Privacy Policy</a> | <a href="../disclaimer.html">Disclaimer</a></p>
+<p>Speaker Cleaner Hub — free tools and guides to keep your phone speaker clean and loud.</p>
+<p>Copyright 2026 Speaker Cleaner Hub. All rights reserved.</p>
+</footer>
+<script>
+(function(){
+  var audioCtx = null, osc = null, noiseNode = null, gainNode = null;
+  var timerId = null, startTime = 0, totalMs = 60000, running = false;
+  var modeEl = document.getElementById('mode');
+  var durationEl = document.getElementById('duration');
+  var volumeEl = document.getElementById('volume');
+  var volumeLabel = document.getElementById('volumeLabel');
+  var readout = document.getElementById('readout');
+  var statusEl = document.getElementById('status');
+  var progressBar = document.getElementById('progressBar');
+  var startBtn = document.getElementById('startBtn');
+  var stopBtn = document.getElementById('stopBtn');
+
+  volumeEl.addEventListener('input', function(){
+    volumeLabel.textContent = volumeEl.value + '%';
+    if (gainNode) gainNode.gain.value = volumeEl.value / 100;
+  });
+
+  function modeName(){
+    if (modeEl.value === 'low') return 'Low-frequency vibration — 165 Hz';
+    if (modeEl.value === 'sweep') return 'Frequency sweep — 100 Hz to 20,000 Hz';
+    return 'Noise bursts';
+  }
+
+  function startOscillator(){
+    audioCtx = audioCtx || new (window.AudioContext || window.webkitAudioContext)();
+    if (audioCtx.state === 'suspended') audioCtx.resume();
+    gainNode = audioCtx.createGain();
+    gainNode.gain.value = volumeEl.value / 100;
+    gainNode.connect(audioCtx.destination);
+    var mode = modeEl.value;
+    if (mode === 'burst') {
+      var bufferSize = audioCtx.sampleRate * 2;
+      var buffer = audioCtx.createBuffer(1, bufferSize, audioCtx.sampleRate);
+      var data = buffer.getChannelData(0);
+      for (var i = 0; i < bufferSize; i++) {
+        var t = i / audioCtx.sampleRate;
+        var pulse = (t % 0.5) < 0.25 ? 1 : 0;
+        data[i] = pulse * Math.sin(2 * Math.PI * 165 * t) * 0.9;
+      }
+      noiseNode = audioCtx.createBufferSource();
+      noiseNode.buffer = buffer;
+      noiseNode.loop = true;
+      noiseNode.connect(gainNode);
+      noiseNode.start();
+    } else {
+      osc = audioCtx.createOscillator();
+      osc.type = 'sine';
+      if (mode === 'low') {
+        osc.frequency.setValueAtTime(165, audioCtx.currentTime);
+      } else {
+        osc.frequency.setValueAtTime(100, audioCtx.currentTime);
+        osc.frequency.exponentialRampToValueAtTime(20000, audioCtx.currentTime + totalMs / 1000);
+      }
+      osc.connect(gainNode);
+      osc.start();
+    }
+  }
+
+  function stopSound(){
+    try { if (osc) osc.stop(); } catch(e) {}
+    try { if (noiseNode) noiseNode.stop(); } catch(e) {}
+    osc = null; noiseNode = null;
+    if (gainNode) { try { gainNode.disconnect(); } catch(e) {} gainNode = null; }
+  }
+
+  function tick(){
+    var elapsed = Date.now() - startTime;
+    var remaining = Math.max(0, totalMs - elapsed);
+    var pct = Math.min(100, (elapsed / totalMs) * 100);
+    progressBar.style.width = pct + '%';
+    var secs = Math.ceil(remaining / 1000);
+    readout.textContent = modeName() + ' — ' + secs + 's left';
+    statusEl.textContent = 'Cleaning in progress — ' + Math.floor(elapsed / 1000) + 's elapsed';
+    if (remaining <= 0) { finish(); }
+  }
+
+  function finish(){
+    stopAll();
+    readout.textContent = 'Done — cleaning finished';
+    statusEl.textContent = 'Finished. Test your speaker with the Volume Test or Sound Test.';
+    progressBar.style.width = '100%';
+  }
+
+  function stopAll(){
+    clearInterval(timerId); timerId = null;
+    stopSound();
+    running = false;
+    startBtn.disabled = false;
+    stopBtn.disabled = true;
+    modeEl.disabled = false;
+    durationEl.disabled = false;
+  }
+
+  startBtn.addEventListener('click', function(){
+    if (running) return;
+    totalMs = parseInt(durationEl.value, 10) * 1000;
+    running = true;
+    startBtn.disabled = true;
+    stopBtn.disabled = false;
+    modeEl.disabled = true;
+    durationEl.disabled = true;
+    startOscillator();
+    startTime = Date.now();
+    progressBar.style.width = '0%';
+    tick();
+    timerId = setInterval(tick, 200);
+  });
+
+  stopBtn.addEventListener('click', function(){
+    stopAll();
+    readout.textContent = 'Stopped — press Start Cleaning to run again';
+    statusEl.textContent = 'Stopped early.';
+    progressBar.style.width = '0%';
+  });
+})();
+</script>
+</body>
+</html>

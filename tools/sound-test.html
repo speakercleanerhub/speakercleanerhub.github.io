@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sound Test — Left, Right, Stereo, Bass &amp; Treble | Speaker Cleaner Hub</title>
+<meta name="description" content="Free sound test: check left and right channels, stereo balance, bass and treble with real test tones played through your phone speaker.">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;line-height:1.65;color:#1e293b;background:#f8fafc}
+a{color:#2563eb;text-decoration:none}
+a:hover{text-decoration:underline}
+img{max-width:100%;height:auto;display:block}
+header{background:#0f172a;color:#fff}
+.header-inner{max-width:960px;margin:0 auto;padding:14px 20px;display:flex;flex-wrap:wrap;align-items:center;gap:10px;justify-content:space-between}
+.logo{font-size:22px;font-weight:800;color:#fff;white-space:nowrap}
+.logo span{color:#38bdf8}
+nav{display:flex;flex-wrap:wrap;gap:4px}
+nav a{color:#cbd5e1;font-size:15px;padding:6px 10px;border-radius:6px}
+nav a:hover{color:#fff;background:#1e293b;text-decoration:none}
+main{max-width:960px;margin:0 auto;padding:24px 20px 48px}
+h1{font-size:28px;line-height:1.3;margin-bottom:14px;color:#0f172a}
+h2{font-size:22px;margin:28px 0 10px;color:#0f172a}
+h3{font-size:18px;margin:20px 0 8px;color:#0f172a}
+p{margin-bottom:14px}
+ul,ol{margin:0 0 14px 24px}
+li{margin-bottom:6px}
+.hero{background:linear-gradient(135deg,#2563eb,#0ea5e9);color:#fff;border-radius:16px;padding:36px 28px;text-align:center;margin-bottom:28px}
+.hero h1{font-size:30px;color:#fff;margin-bottom:12px}
+.hero p{font-size:17px;opacity:.95;margin-bottom:20px}
+.btn{display:inline-block;background:#fff;color:#1d4ed8;font-weight:700;padding:12px 26px;border-radius:999px;border:0;cursor:pointer;font-size:16px}
+.btn:hover{text-decoration:none;opacity:.92}
+.btn-primary{background:#2563eb;color:#fff}
+.btn-secondary{background:#e2e8f0;color:#0f172a}
+.btn-danger{background:#dc2626;color:#fff}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:18px;margin:20px 0}
+.card{background:#fff;border:1px solid #e2e8f0;border-radius:12px;overflow:hidden}
+.card img{width:100%;height:170px;object-fit:cover}
+.card-body{padding:16px}
+.card-body h3{margin:0 0 8px;font-size:18px}
+.card-body h3 a{color:#0f172a}
+.card-body p{font-size:15px;color:#475569;margin-bottom:10px}
+.tool-box{background:#fff;border:1px solid #e2e8f0;border-radius:14px;padding:24px;margin:20px 0}
+.tool-box label{display:block;font-weight:600;margin:14px 0 6px}
+.tool-box input[type=range]{width:100%}
+.tool-box select,.tool-box input[type=number]{padding:10px;border:1px solid #cbd5e1;border-radius:8px;font-size:16px;width:100%;max-width:320px}
+.readout{background:#0f172a;color:#38bdf8;font-size:22px;font-weight:700;text-align:center;border-radius:10px;padding:16px;margin:16px 0}
+.progress{height:12px;background:#e2e8f0;border-radius:999px;overflow:hidden;margin:14px 0}
+.progress-bar{height:100%;background:#2563eb;width:0%}
+.status{font-weight:600;text-align:center;margin:10px 0}
+.warning{background:#fef3c7;border:1px solid #f59e0b;border-radius:10px;padding:14px 16px;margin:16px 0;font-size:15px}
+.note{background:#eff6ff;border:1px solid #93c5fd;border-radius:10px;padding:14px 16px;margin:16px 0;font-size:15px}
+.faq{margin:20px 0}
+.faq h3{font-size:17px;margin:16px 0 4px}
+.featured{border-radius:12px;margin:0 0 20px}
+.btn-row{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin:16px 0}
+footer{background:#0f172a;color:#94a3b8;padding:28px 20px;text-align:center;font-size:14px}
+footer a{color:#cbd5e1;margin:0 8px}
+footer p{margin-bottom:8px}
+@media(max-width:600px){
+  h1{font-size:24px}
+  .hero{padding:28px 18px}
+  .hero h1{font-size:24px}
+  nav a{font-size:14px;padding:5px 7px}
+}
+</style>
+</head>
+<body>
+<header>
+<div class="header-inner">
+<a class="logo" href="../index.html">Speaker Cleaner <span>Hub</span></a>
+<nav>
+<a href="../index.html">Home</a>
+<a href="../tools/speaker-cleaner.html">Speaker Cleaner</a>
+<a href="../tools/volume-test.html">Volume Test</a>
+<a href="../tools/frequency-generator.html">Frequency Generator</a>
+<a href="../tools/sound-test.html">Sound Test</a>
+<a href="../about.html">About</a>
+<a href="../contact.html">Contact</a>
+</nav>
+</div>
+</header>
+<main>
+<h1>Sound Test</h1>
+<p>Check your speaker's channels and range with real test tones. Each button plays a different tone through your phone speaker using the Web Audio API. Use headphones or earphones for the left/right channel test — a phone loudspeaker plays in mono, so channels only separate through headphones.</p>
+
+<div class="note"><strong>Note on phones:</strong> most phones have one loudspeaker, so left and right tones will sound the same through the loudspeaker. That is normal. To test stereo properly, plug in earphones or connect a Bluetooth speaker and run the test again.</div>
+
+<div class="tool-box">
+<label for="volume">Volume: <span id="volumeLabel">50%</span></label>
+<input type="range" id="volume" min="5" max="100" value="50">
+
+<div class="readout" id="readout">Not playing</div>
+<p class="status" id="status">Press a test button below.</p>
+
+<h3>Channel test</h3>
+<div class="btn-row">
+<button class="btn btn-primary" type="button" data-test="left">Left Channel</button>
+<button class="btn btn-primary" type="button" data-test="right">Right Channel</button>
+<button class="btn btn-primary" type="button" data-test="stereo">Stereo (both)</button>
+</div>
+
+<h3>Bass and treble test</h3>
+<div class="btn-row">
+<button class="btn btn-primary" type="button" data-test="bass">Bass — 60 Hz</button>
+<button class="btn btn-primary" type="button" data-test="mid">Mid — 440 Hz</button>
+<button class="btn btn-primary" type="button" data-test="treble">Treble — 10,000 Hz</button>
+</div>
+
+<div class="btn-row">
+<button class="btn btn-danger" id="stopBtn" type="button" disabled>Stop</button>
+</div>
+</div>
+
+<h2>How to read the results</h2>
+<ul>
+<li><strong>Left channel:</strong> with earphones, the tone should come only from the left ear. If it comes from both or neither, the channel balance or wiring is off.</li>
+<li><strong>Right channel:</strong> the same, mirrored. The tone should come only from the right ear.</li>
+<li><strong>Stereo:</strong> the tone should sound centred and even in both ears.</li>
+<li><strong>Bass (60 Hz):</strong> a deep, smooth hum. Buzzing or rattling at 60 Hz usually means dust on the diaphragm or a loose speaker.</li>
+<li><strong>Mid (440 Hz):</strong> a clear, steady tone. This is the easiest range to judge — any harshness here is a warning sign.</li>
+<li><strong>Treble (10,000 Hz):</strong> a high, thin tone. It will be quieter on a phone speaker, which is normal, but it should not crackle or cut out.</li>
+</ul>
+
+<div class="faq">
+<h2>Frequently Asked Questions</h2>
+<h3>Why do left and right sound the same on my phone?</h3>
+<p>Because your phone loudspeaker is mono — it plays one channel. Channel separation only exists with earphones, headphones or a stereo Bluetooth speaker. The test is still useful: it tells you the tones are being generated correctly.</p>
+<h3>The bass test rattles — is my speaker broken?</h3>
+<p>Not necessarily. Rattling at 60 Hz often means dust or lint is vibrating on the diaphragm. Run the <a href="speaker-cleaner.html">Speaker Cleaner</a> and try again. If the rattle stays after cleaning, the speaker may be damaged — see <a href="../guides/speaker-distortion-causes.html">What Causes Speaker Distortion on a Phone</a>.</p>
+<h3>Should I test at full volume?</h3>
+<p>No — 50% is enough for most tests. Full volume can hide small problems and can stress a damaged speaker. Only use 100% briefly if you need to compare loudness.</p>
+</div>
+
+<p>Related guides: <a href="../guides/left-right-channel-test.html">Left and Right Channel Test</a> &middot; <a href="../guides/bass-treble-test.html">Bass and Treble Test</a> &middot; <a href="../guides/speaker-test-sounds.html">Speaker Test Sounds</a></p>
+</main>
+<footer>
+<p><a href="../index.html">Home</a> | <a href="../about.html">About</a> | <a href="../contact.html">Contact</a> | <a href="../privacy.html">Privacy Policy</a> | <a href="../disclaimer.html">Disclaimer</a></p>
+<p>Speaker Cleaner Hub — free tools and guides to keep your phone speaker clean and loud.</p>
+<p>Copyright 2026 Speaker Cleaner Hub. All rights reserved.</p>
+</footer>
+<script>
+(function(){
+  var audioCtx = null, osc = null, gainNode = null, panner = null;
+  var volumeEl = document.getElementById('volume');
+  var volumeLabel = document.getElementById('volumeLabel');
+  var readout = document.getElementById('readout');
+  var statusEl = document.getElementById('status');
+  var stopBtn = document.getElementById('stopBtn');
+
+  var tests = {
+    left:   { freq: 440, pan: -1, label: 'Left channel — 440 Hz tone panned fully left' },
+    right:  { freq: 440, pan: 1,  label: 'Right channel — 440 Hz tone panned fully right' },
+    stereo: { freq: 440, pan: 0,  label: 'Stereo — 440 Hz tone centred' },
+    bass:   { freq: 60,  pan: 0,  label: 'Bass test — 60 Hz tone' },
+    mid:    { freq: 440, pan: 0,  label: 'Mid test — 440 Hz tone' },
+    treble: { freq: 10000, pan: 0, label: 'Treble test — 10,000 Hz tone' }
+  };
+
+  volumeEl.addEventListener('input', function(){
+    volumeLabel.textContent = volumeEl.value + '%';
+    if (gainNode) gainNode.gain.value = volumeEl.value / 100;
+  });
+
+  function stopTone(){
+    if (osc) { try { osc.stop(); } catch(e) {} osc = null; }
+    if (gainNode) { try { gainNode.disconnect(); } catch(e) {} gainNode = null; }
+    if (panner) { try { panner.disconnect(); } catch(e) {} panner = null; }
+    readout.textContent = 'Not playing';
+    statusEl.textContent = 'Press a test button below.';
+    stopBtn.disabled = true;
+  }
+
+  function playTest(key){
+    var t = tests[key];
+    stopTone();
+    audioCtx = audioCtx || new (window.AudioContext || window.webkitAudioContext)();
+    if (audioCtx.state === 'suspended') audioCtx.resume();
+    gainNode = audioCtx.createGain();
+    gainNode.gain.value = volumeEl.value / 100;
+    panner = audioCtx.createStereoPanner();
+    panner.pan.value = t.pan;
+    gainNode.connect(panner);
+    panner.connect(audioCtx.destination);
+    osc = audioCtx.createOscillator();
+    osc.type = 'sine';
+    osc.frequency.setValueAtTime(t.freq, audioCtx.currentTime);
+    osc.connect(gainNode);
+    osc.start();
+    readout.textContent = 'Playing: ' + t.label + ' at ' + volumeEl.value + '% volume';
+    statusEl.textContent = 'Tone playing — press Stop when done.';
+    stopBtn.disabled = false;
+  }
+
+  var btns = document.querySelectorAll('[data-test]');
+  for (var i = 0; i < btns.length; i++) {
+    btns[i].addEventListener('click', function(){
+      playTest(this.getAttribute('data-test'));
+    });
+  }
+  stopBtn.addEventListener('click', stopTone);
+})();
+</script>
+</body>
+</html>

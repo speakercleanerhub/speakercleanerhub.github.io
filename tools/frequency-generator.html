@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Frequency Generator — Play Any Tone 20 Hz to 20 kHz | Speaker Cleaner Hub</title>
+<meta name="description" content="Free frequency generator: pick any frequency from 20 Hz to 20,000 Hz and play a real sine tone to test your phone speaker's range.">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;line-height:1.65;color:#1e293b;background:#f8fafc}
+a{color:#2563eb;text-decoration:none}
+a:hover{text-decoration:underline}
+img{max-width:100%;height:auto;display:block}
+header{background:#0f172a;color:#fff}
+.header-inner{max-width:960px;margin:0 auto;padding:14px 20px;display:flex;flex-wrap:wrap;align-items:center;gap:10px;justify-content:space-between}
+.logo{font-size:22px;font-weight:800;color:#fff;white-space:nowrap}
+.logo span{color:#38bdf8}
+nav{display:flex;flex-wrap:wrap;gap:4px}
+nav a{color:#cbd5e1;font-size:15px;padding:6px 10px;border-radius:6px}
+nav a:hover{color:#fff;background:#1e293b;text-decoration:none}
+main{max-width:960px;margin:0 auto;padding:24px 20px 48px}
+h1{font-size:28px;line-height:1.3;margin-bottom:14px;color:#0f172a}
+h2{font-size:22px;margin:28px 0 10px;color:#0f172a}
+h3{font-size:18px;margin:20px 0 8px;color:#0f172a}
+p{margin-bottom:14px}
+ul,ol{margin:0 0 14px 24px}
+li{margin-bottom:6px}
+.hero{background:linear-gradient(135deg,#2563eb,#0ea5e9);color:#fff;border-radius:16px;padding:36px 28px;text-align:center;margin-bottom:28px}
+.hero h1{font-size:30px;color:#fff;margin-bottom:12px}
+.hero p{font-size:17px;opacity:.95;margin-bottom:20px}
+.btn{display:inline-block;background:#fff;color:#1d4ed8;font-weight:700;padding:12px 26px;border-radius:999px;border:0;cursor:pointer;font-size:16px}
+.btn:hover{text-decoration:none;opacity:.92}
+.btn-primary{background:#2563eb;color:#fff}
+.btn-secondary{background:#e2e8f0;color:#0f172a}
+.btn-danger{background:#dc2626;color:#fff}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:18px;margin:20px 0}
+.card{background:#fff;border:1px solid #e2e8f0;border-radius:12px;overflow:hidden}
+.card img{width:100%;height:170px;object-fit:cover}
+.card-body{padding:16px}
+.card-body h3{margin:0 0 8px;font-size:18px}
+.card-body h3 a{color:#0f172a}
+.card-body p{font-size:15px;color:#475569;margin-bottom:10px}
+.tool-box{background:#fff;border:1px solid #e2e8f0;border-radius:14px;padding:24px;margin:20px 0}
+.tool-box label{display:block;font-weight:600;margin:14px 0 6px}
+.tool-box input[type=range]{width:100%}
+.tool-box select,.tool-box input[type=number]{padding:10px;border:1px solid #cbd5e1;border-radius:8px;font-size:16px;width:100%;max-width:320px}
+.readout{background:#0f172a;color:#38bdf8;font-size:22px;font-weight:700;text-align:center;border-radius:10px;padding:16px;margin:16px 0}
+.progress{height:12px;background:#e2e8f0;border-radius:999px;overflow:hidden;margin:14px 0}
+.progress-bar{height:100%;background:#2563eb;width:0%}
+.status{font-weight:600;text-align:center;margin:10px 0}
+.warning{background:#fef3c7;border:1px solid #f59e0b;border-radius:10px;padding:14px 16px;margin:16px 0;font-size:15px}
+.note{background:#eff6ff;border:1px solid #93c5fd;border-radius:10px;padding:14px 16px;margin:16px 0;font-size:15px}
+.faq{margin:20px 0}
+.faq h3{font-size:17px;margin:16px 0 4px}
+.featured{border-radius:12px;margin:0 0 20px}
+.btn-row{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin:16px 0}
+footer{background:#0f172a;color:#94a3b8;padding:28px 20px;text-align:center;font-size:14px}
+footer a{color:#cbd5e1;margin:0 8px}
+footer p{margin-bottom:8px}
+@media(max-width:600px){
+  h1{font-size:24px}
+  .hero{padding:28px 18px}
+  .hero h1{font-size:24px}
+  nav a{font-size:14px;padding:5px 7px}
+}
+</style>
+</head>
+<body>
+<header>
+<div class="header-inner">
+<a class="logo" href="../index.html">Speaker Cleaner <span>Hub</span></a>
+<nav>
+<a href="../index.html">Home</a>
+<a href="../tools/speaker-cleaner.html">Speaker Cleaner</a>
+<a href="../tools/volume-test.html">Volume Test</a>
+<a href="../tools/frequency-generator.html">Frequency Generator</a>
+<a href="../tools/sound-test.html">Sound Test</a>
+<a href="../about.html">About</a>
+<a href="../contact.html">Contact</a>
+</nav>
+</div>
+</header>
+<main>
+<h1>Frequency Generator</h1>
+<p>Pick any frequency from 20 Hz to 20,000 Hz and play a real sine tone through your speaker. The readout always shows the exact frequency being played. Use it to find where your speaker sounds weak, buzzy or silent.</p>
+
+<div class="warning"><strong>Be careful with high frequencies:</strong> tones above 10,000 Hz can be unpleasant or hard to hear, and very loud low tones can rattle a damaged speaker. Start at a low volume and raise it slowly. Do not hold the phone against your ear.</div>
+
+<div class="tool-box">
+<label for="freqSlider">Frequency: <span id="freqLabel">440 Hz</span></label>
+<input type="range" id="freqSlider" min="0" max="1000" value="468">
+<p class="note">Slider uses a logarithmic scale so low frequencies are easy to pick precisely. Range: 20 Hz to 20,000 Hz.</p>
+
+<label for="freqInput">Exact frequency (Hz)</label>
+<input type="number" id="freqInput" min="20" max="20000" value="440">
+
+<label for="waveType">Wave type</label>
+<select id="waveType">
+<option value="sine" selected>Sine — smooth, pure tone</option>
+<option value="square">Square — harsh, buzzy tone</option>
+<option value="triangle">Triangle — soft tone</option>
+</select>
+
+<label for="volume">Volume: <span id="volumeLabel">50%</span></label>
+<input type="range" id="volume" min="5" max="100" value="50">
+
+<div class="readout" id="readout">Not playing — 440 Hz selected</div>
+<p class="status" id="status">Press Play Tone to hear the selected frequency.</p>
+<div class="btn-row">
+<button class="btn btn-primary" id="playBtn" type="button">Play Tone</button>
+<button class="btn btn-danger" id="stopBtn" type="button" disabled>Stop</button>
+</div>
+<div class="btn-row">
+<button class="btn btn-secondary" type="button" data-freq="60">60 Hz</button>
+<button class="btn btn-secondary" type="button" data-freq="165">165 Hz</button>
+<button class="btn btn-secondary" type="button" data-freq="440">440 Hz</button>
+<button class="btn btn-secondary" type="button" data-freq="1000">1000 Hz</button>
+<button class="btn btn-secondary" type="button" data-freq="5000">5000 Hz</button>
+<button class="btn btn-secondary" type="button" data-freq="10000">10000 Hz</button>
+</div>
+</div>
+
+<h2>How to test your speaker with frequencies</h2>
+<ol>
+<li>Start at 440 Hz and play the tone. It should sound smooth and clear.</li>
+<li>Move the slider down slowly toward 60 Hz. Low tones should be deep and steady. If they rattle or buzz, dust or damage may be the cause.</li>
+<li>Move the slider up toward 10,000 Hz. High tones get quieter on small phone speakers — that is normal — but they should not crackle or cut out.</li>
+<li>Note any frequency where the sound suddenly drops, buzzes or distorts. That is the range where your speaker struggles.</li>
+</ol>
+<p>Read <a href="../guides/frequency-sweep-explained.html">Frequency Sweep Explained</a> to learn why sweeping through frequencies helps cleaning and testing, and <a href="../guides/bass-treble-test.html">Bass and Treble Test</a> for what the results mean.</p>
+
+<div class="faq">
+<h2>Frequently Asked Questions</h2>
+<h3>Why can't I hear very high frequencies?</h3>
+<p>Most adults cannot hear above 15,000–17,000 Hz, and phone speakers are weak at those frequencies too. Hearing nothing above 16,000 Hz is normal and does not mean your speaker is broken.</p>
+<h3>What frequency is best for cleaning?</h3>
+<p>Low frequencies around 100–200 Hz move the speaker diaphragm the most, which is why the <a href="speaker-cleaner.html">Speaker Cleaner</a> uses 165 Hz. Use this generator to test; use the cleaner to clean.</p>
+<h3>Why does the tone change when I move the slider while playing?</h3>
+<p>The oscillator frequency updates live, so you hear the pitch change smoothly. This is a real tone being generated in your browser, not a recording.</p>
+</div>
+
+<p>Related: <a href="sound-test.html">Sound Test</a> &middot; <a href="volume-test.html">Volume Test</a> &middot; <a href="../guides/speaker-test-sounds.html">Speaker Test Sounds</a></p>
+</main>
+<footer>
+<p><a href="../index.html">Home</a> | <a href="../about.html">About</a> | <a href="../contact.html">Contact</a> | <a href="../privacy.html">Privacy Policy</a> | <a href="../disclaimer.html">Disclaimer</a></p>
+<p>Speaker Cleaner Hub — free tools and guides to keep your phone speaker clean and loud.</p>
+<p>Copyright 2026 Speaker Cleaner Hub. All rights reserved.</p>
+</footer>
+<script>
+(function(){
+  var audioCtx = null, osc = null, gainNode = null;
+  var slider = document.getElementById('freqSlider');
+  var freqInput = document.getElementById('freqInput');
+  var waveType = document.getElementById('waveType');
+  var volumeEl = document.getElementById('volume');
+  var volumeLabel = document.getElementById('volumeLabel');
+  var freqLabel = document.getElementById('freqLabel');
+  var readout = document.getElementById('readout');
+  var statusEl = document.getElementById('status');
+  var playBtn = document.getElementById('playBtn');
+  var stopBtn = document.getElementById('stopBtn');
+
+  function sliderToFreq(v){ return Math.round(20 * Math.pow(1000, v / 1000)); }
+  function freqToSlider(f){ return Math.round(1000 * Math.log(f / 20) / Math.log(1000)); }
+  function currentFreq(){ return parseInt(freqInput.value, 10) || 440; }
+
+  function syncFromSlider(){
+    var f = sliderToFreq(parseInt(slider.value, 10));
+    freqInput.value = f;
+    freqLabel.textContent = f + ' Hz';
+    if (osc) { osc.frequency.setValueAtTime(f, audioCtx.currentTime); updateReadout(); }
+    else { readout.textContent = 'Not playing — ' + f + ' Hz selected'; }
+  }
+  function syncFromInput(){
+    var f = Math.min(20000, Math.max(20, parseInt(freqInput.value, 10) || 440));
+    freqInput.value = f;
+    slider.value = freqToSlider(f);
+    freqLabel.textContent = f + ' Hz';
+    if (osc) { osc.frequency.setValueAtTime(f, audioCtx.currentTime); updateReadout(); }
+    else { readout.textContent = 'Not playing — ' + f + ' Hz selected'; }
+  }
+
+  slider.addEventListener('input', syncFromSlider);
+  freqInput.addEventListener('change', syncFromInput);
+  waveType.addEventListener('change', function(){
+    if (osc) osc.type = waveType.value;
+  });
+  volumeEl.addEventListener('input', function(){
+    volumeLabel.textContent = volumeEl.value + '%';
+    if (gainNode) gainNode.gain.value = volumeEl.value / 100;
+  });
+
+  function updateReadout(){
+    readout.textContent = 'Playing ' + currentFreq() + ' Hz ' + waveType.value + ' tone at ' + volumeEl.value + '% volume';
+    statusEl.textContent = 'Tone playing — move the slider to change the frequency live.';
+  }
+
+  var presetBtns = document.querySelectorAll('[data-freq]');
+  for (var i = 0; i < presetBtns.length; i++) {
+    presetBtns[i].addEventListener('click', function(){
+      freqInput.value = this.getAttribute('data-freq');
+      syncFromInput();
+    });
+  }
+
+  playBtn.addEventListener('click', function(){
+    if (osc) return;
+    audioCtx = audioCtx || new (window.AudioContext || window.webkitAudioContext)();
+    if (audioCtx.state === 'suspended') audioCtx.resume();
+    gainNode = audioCtx.createGain();
+    gainNode.gain.value = volumeEl.value / 100;
+    gainNode.connect(audioCtx.destination);
+    osc = audioCtx.createOscillator();
+    osc.type = waveType.value;
+    osc.frequency.setValueAtTime(currentFreq(), audioCtx.currentTime);
+    osc.connect(gainNode);
+    osc.start();
+    updateReadout();
+    playBtn.disabled = true;
+    stopBtn.disabled = false;
+  });
+
+  stopBtn.addEventListener('click', function(){
+    if (osc) { try { osc.stop(); } catch(e) {} osc = null; }
+    if (gainNode) { try { gainNode.disconnect(); } catch(e) {} gainNode = null; }
+    readout.textContent = 'Not playing — ' + currentFreq() + ' Hz selected';
+    statusEl.textContent = 'Stopped. Press Play Tone to hear the selected frequency.';
+    playBtn.disabled = false;
+    stopBtn.disabled = true;
+  });
+})();
+</script>
+</body>
+</html>
