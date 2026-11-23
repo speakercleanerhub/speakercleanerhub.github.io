@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Frequency Sweep Explained: What It Does to Your Speaker | Speaker Cleaner Hub</title>
+<meta name="description" content="What is a frequency sweep and how does it clean a phone speaker? Learn how sound vibrations dislodge dust and water, and what a sweep cannot fix for you.">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;line-height:1.65;color:#1e293b;background:#f8fafc}
+a{color:#2563eb;text-decoration:none}
+a:hover{text-decoration:underline}
+img{max-width:100%;height:auto;display:block}
+header{background:#0f172a;color:#fff}
+.header-inner{max-width:960px;margin:0 auto;padding:14px 20px;display:flex;flex-wrap:wrap;align-items:center;gap:10px;justify-content:space-between}
+.logo{font-size:22px;font-weight:800;color:#fff;white-space:nowrap}
+.logo span{color:#38bdf8}
+nav{display:flex;flex-wrap:wrap;gap:4px}
+nav a{color:#cbd5e1;font-size:15px;padding:6px 10px;border-radius:6px}
+nav a:hover{color:#fff;background:#1e293b;text-decoration:none}
+main{max-width:960px;margin:0 auto;padding:24px 20px 48px}
+h1{font-size:28px;line-height:1.3;margin-bottom:14px;color:#0f172a}
+h2{font-size:22px;margin:28px 0 10px;color:#0f172a}
+h3{font-size:18px;margin:20px 0 8px;color:#0f172a}
+p{margin-bottom:14px}
+ul,ol{margin:0 0 14px 24px}
+li{margin-bottom:6px}
+.hero{background:linear-gradient(135deg,#2563eb,#0ea5e9);color:#fff;border-radius:16px;padding:36px 28px;text-align:center;margin-bottom:28px}
+.hero h1{font-size:30px;color:#fff;margin-bottom:12px}
+.hero p{font-size:17px;opacity:.95;margin-bottom:20px}
+.btn{display:inline-block;background:#fff;color:#1d4ed8;font-weight:700;padding:12px 26px;border-radius:999px;border:0;cursor:pointer;font-size:16px}
+.btn:hover{text-decoration:none;opacity:.92}
+.btn-primary{background:#2563eb;color:#fff}
+.btn-secondary{background:#e2e8f0;color:#0f172a}
+.btn-danger{background:#dc2626;color:#fff}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:18px;margin:20px 0}
+.card{background:#fff;border:1px solid #e2e8f0;border-radius:12px;overflow:hidden}
+.card img{width:100%;height:170px;object-fit:cover}
+.card-body{padding:16px}
+.card-body h3{margin:0 0 8px;font-size:18px}
+.card-body h3 a{color:#0f172a}
+.card-body p{font-size:15px;color:#475569;margin-bottom:10px}
+.tool-box{background:#fff;border:1px solid #e2e8f0;border-radius:14px;padding:24px;margin:20px 0}
+.tool-box label{display:block;font-weight:600;margin:14px 0 6px}
+.tool-box input[type=range]{width:100%}
+.tool-box select,.tool-box input[type=number]{padding:10px;border:1px solid #cbd5e1;border-radius:8px;font-size:16px;width:100%;max-width:320px}
+.readout{background:#0f172a;color:#38bdf8;font-size:22px;font-weight:700;text-align:center;border-radius:10px;padding:16px;margin:16px 0}
+.progress{height:12px;background:#e2e8f0;border-radius:999px;overflow:hidden;margin:14px 0}
+.progress-bar{height:100%;background:#2563eb;width:0%}
+.status{font-weight:600;text-align:center;margin:10px 0}
+.warning{background:#fef3c7;border:1px solid #f59e0b;border-radius:10px;padding:14px 16px;margin:16px 0;font-size:15px}
+.note{background:#eff6ff;border:1px solid #93c5fd;border-radius:10px;padding:14px 16px;margin:16px 0;font-size:15px}
+.faq{margin:20px 0}
+.faq h3{font-size:17px;margin:16px 0 4px}
+.featured{border-radius:12px;margin:0 0 20px}
+.btn-row{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin:16px 0}
+footer{background:#0f172a;color:#94a3b8;padding:28px 20px;text-align:center;font-size:14px}
+footer a{color:#cbd5e1;margin:0 8px}
+footer p{margin-bottom:8px}
+@media(max-width:600px){
+  h1{font-size:24px}
+  .hero{padding:28px 18px}
+  .hero h1{font-size:24px}
+  nav a{font-size:14px;padding:5px 7px}
+}
+</style>
+</head>
+<body>
+<header>
+<div class="header-inner">
+<a class="logo" href="../index.html">Speaker Cleaner <span>Hub</span></a>
+<nav>
+<a href="../index.html">Home</a>
+<a href="../tools/speaker-cleaner.html">Speaker Cleaner</a>
+<a href="../tools/volume-test.html">Volume Test</a>
+<a href="../tools/frequency-generator.html">Frequency Generator</a>
+<a href="../tools/sound-test.html">Sound Test</a>
+<a href="../about.html">About</a>
+<a href="../contact.html">Contact</a>
+</nav>
+</div>
+</header>
+<main>
+<h1>Frequency Sweep Explained: What It Does to Your Speaker</h1>
+<img class="featured" src="../images/frequency-sweep-explained.jpg" alt="Sound waves moving across a phone speaker during a frequency sweep">
+<p>You have probably seen speaker cleaning apps and websites that promise to eject water and dust using sound. At the heart of most of them is a technique called a frequency sweep. It sounds technical, but the idea is simple: the phone plays a tone that gradually rises or falls in pitch, and the changing vibrations shake the speaker in a way that helps loosen whatever is sitting on or inside the grille. This guide explains how it works, when it helps, and where its limits are.</p>
+
+<h2>What Is a Frequency Sweep?</h2>
+<p>A frequency sweep is a sound that moves smoothly through a range of pitches over a set period of time. Instead of playing one fixed note, the speaker plays a tone that starts low, perhaps around 100 hertz, and climbs steadily up to several thousand hertz, or the other way around. Frequency is measured in hertz, and it describes how many times per second the speaker cone moves back and forth. Low frequencies make the cone move slowly with large movements, while high frequencies make it move very quickly with small movements.</p>
+<p>Because the sweep covers many frequencies in one run, it excites the speaker cone in many different ways. Some frequencies make the cone vibrate more strongly than others, and these peaks of movement are what do the useful work. Dust particles resting on the grille get shaken loose, and small water droplets can be vibrated out of the speaker cavity. The sweep is the same basic principle behind the water-eject feature built into some smartwatches, which plays a special tone to push water out of the speaker after swimming.</p>
+
+<h2>How a Sweep Helps Clean a Speaker</h2>
+<p>Inside your phone, the speaker cone sits just behind the grille. When dust builds up on the grille or inside the small chamber in front of the cone, it muffles the sound. Playing a sweep at full volume forces the cone to move as far as it safely can, and that movement creates air pressure changes that can push loose particles outward. If water has entered the speaker, the same vibrations can break the surface tension holding droplets in place and help them escape through the grille holes.</p>
+<p>For best results, place the phone speaker side down on a clean, dry cloth before starting the sweep. Gravity then works with the vibrations, so anything that is shaken loose falls out instead of settling back inside. Run the sweep for thirty to sixty seconds and repeat it two or three times if needed. You can try our free <a href="../tools/speaker-cleaner.html">speaker cleaner</a> tool, which plays a controlled sweep designed for this purpose, or experiment with individual tones using our <a href="../tools/frequency-generator.html">frequency generator</a> to find which pitch seems to move the most debris on your phone.</p>
+
+<h2>Why Low Frequencies Matter Most</h2>
+<p>Low frequencies are the most useful part of a sweep for cleaning. A low tone such as 100 to 300 hertz makes the speaker cone move with large, visible excursions, and those large movements generate the strongest air pressure changes. High frequencies still vibrate the cone, but the movements are tiny and do less physical work on trapped dust or water. This is why a good cleaning sweep usually starts low and spends enough time in the bass range before climbing higher.</p>
+<p>That said, the sweep as a whole is more effective than a single fixed tone, because different phones and different types of debris respond to different frequencies. A fixed 165 hertz tone might work well on one phone and poorly on another, while a sweep covers the whole useful range and gives every part of the speaker a chance to vibrate at its strongest. If you are using the frequency generator manually, try holding a low tone for ten seconds, then sweeping upward slowly, and finish with a few seconds of a mid-range tone.</p>
+
+<div class="note">A frequency sweep is a maintenance tool, not a repair. It is most effective on loose dust and fresh water. Dirt that has been compacted into the grille over months, sticky residue, or debris lodged deep behind the mesh may not move at all, no matter how many times you run the sweep.</div>
+
+<h2>What a Frequency Sweep Cannot Fix</h2>
+<p>It is important to be clear about the limits. A frequency sweep cannot fix hardware damage, a blown speaker, or water-damaged components. If the speaker cone is torn, the voice coil is damaged, or corrosion has formed on the internal contacts after water exposure, no sound can repair that. The sweep only moves things that are loose. It does not clean corrosion, restore a damaged membrane, or fix a speaker that has stopped working because of an electrical fault.</p>
+<p>Be cautious of any app or website that guarantees a sweep will fix your speaker. If the sound is distorted, crackling, or absent after several cleaning attempts, the problem is almost certainly physical or electrical, and a repair shop is the right next step. Running a sweep for a long time at maximum volume will not help a damaged speaker and could, in extreme cases, stress an already weakened component. Use short runs of a minute or less, with breaks in between.</p>
+
+<h2>Is a Frequency Sweep Safe for Your Phone?</h2>
+<p>Yes, when used sensibly. Phone speakers are designed to play loud sounds, including low-frequency tones, and a short sweep at full volume is well within what the hardware is built to handle. The main risks come from misuse: running a sweep continuously for many minutes, or playing extremely low frequencies at maximum volume for long periods, can heat the speaker coil and wear it out faster. Keep your cleaning sessions short, give the speaker a rest between runs, and stop immediately if you hear rattling or distortion that was not there before. That sound usually means the speaker is already damaged and needs professional attention.</p>
+
+<h2>Frequently Asked Questions</h2>
+<div class="faq">
+<h3>How long should a frequency sweep run?</h3>
+<p>Thirty to sixty seconds per run is enough. Repeat it two or three times with short breaks if the first run helps but does not fully clear the speaker. Longer sessions do not clean better and only add wear to the speaker.</p>
+<h3>Can a frequency sweep remove water from my phone?</h3>
+<p>It can help eject small amounts of water trapped in the speaker grille and chamber, especially if the water exposure was recent. It cannot dry out water that has reached the internal components, and it cannot undo corrosion. If your phone was submerged, power it off and seek professional help rather than relying on sound alone.</p>
+<h3>Why does my speaker sound worse right after a sweep?</h3>
+<p>This sometimes happens when a sweep loosens debris but does not fully eject it, leaving particles in a worse position. Run the sweep again with the phone speaker side down on a cloth, then brush the grille gently. If the problem persists, see our guide on <a href="speaker-crackling-fixes.html">how to fix a crackling phone speaker</a>.</p>
+</div>
+
+<h2>Related guides</h2>
+<ul>
+<li><a href="safe-cleaning-methods.html">Safe Ways to Clean a Phone Speaker</a></li>
+<li><a href="speaker-cleaning-after-rain-beach.html">Cleaning Your Phone Speaker After Rain or the Beach</a></li>
+<li><a href="volume-suddenly-low-fixes.html">Phone Volume Suddenly Low? Fixes That Work</a></li>
+<li><a href="when-to-visit-repair-shop.html">When to Visit a Repair Shop for Speaker Problems</a></li>
+</ul>
+</main>
+<footer>
+<p><a href="../index.html">Home</a> | <a href="../about.html">About</a> | <a href="../contact.html">Contact</a> | <a href="../privacy.html">Privacy Policy</a> | <a href="../disclaimer.html">Disclaimer</a></p>
+<p>Speaker Cleaner Hub — free tools and guides to keep your phone speaker clean and loud.</p>
+<p>Copyright 2026 Speaker Cleaner Hub. All rights reserved.</p>
+</footer>
+</body>
+</html>
